@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DF5E9D1224EE41DD001CCE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D1124EE41DD001CCE1C /* AppDelegate.swift */; };
-		DF5E9D1424EE41DD001CCE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D1324EE41DD001CCE1C /* SceneDelegate.swift */; };
-		DF5E9D1624EE41DD001CCE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D1524EE41DD001CCE1C /* ViewController.swift */; };
+		DF5E9D1624EE41DD001CCE1C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D1524EE41DD001CCE1C /* OrderViewController.swift */; };
 		DF5E9D1924EE41DD001CCE1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5E9D1724EE41DD001CCE1C /* Main.storyboard */; };
 		DF5E9D1B24EE41DD001CCE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5E9D1A24EE41DD001CCE1C /* Assets.xcassets */; };
 		DF5E9D1E24EE41DD001CCE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5E9D1C24EE41DD001CCE1C /* LaunchScreen.storyboard */; };
 		DF5E9D2924EE41DD001CCE1C /* HomeDepotTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D2824EE41DD001CCE1C /* HomeDepotTestTests.swift */; };
 		DF5E9D3424EE41DD001CCE1C /* HomeDepotTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D3324EE41DD001CCE1C /* HomeDepotTestUITests.swift */; };
+		DF5E9D4224EE43C6001CCE1C /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = DF5E9D4124EE43C6001CCE1C /* orders.json */; };
+		DF5E9D4424EE43EA001CCE1C /* OrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D4324EE43EA001CCE1C /* OrderDataModel.swift */; };
+		DF5E9D4624EE5F76001CCE1C /* DateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D4524EE5F76001CCE1C /* DateType.swift */; };
+		DF5E9D4824EE6852001CCE1C /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D4724EE6852001CCE1C /* OrderViewModel.swift */; };
+		DF5E9D4A24EE6D9D001CCE1C /* OrdersServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D4924EE6D9D001CCE1C /* OrdersServiceProtocol.swift */; };
+		DF5E9D4C24EE7468001CCE1C /* OrderListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D4B24EE7468001CCE1C /* OrderListDataSource.swift */; };
+		DF5E9D8E24EE87BB001CCE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D8D24EE87BB001CCE1C /* SceneDelegate.swift */; };
+		DF5E9D9424EEAF18001CCE1C /* GroupedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D9324EEAF18001CCE1C /* GroupedSection.swift */; };
+		DF5E9D9724EEBFC2001CCE1C /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9D9524EEBFC2001CCE1C /* OrderCollectionViewCell.swift */; };
+		DF5E9D9824EEBFC2001CCE1C /* OrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5E9D9624EEBFC2001CCE1C /* OrderCollectionViewCell.xib */; };
+		DF5E9DA524EED455001CCE1C /* OrderHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E9DA424EED455001CCE1C /* OrderHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +47,7 @@
 /* Begin PBXFileReference section */
 		DF5E9D0E24EE41DD001CCE1C /* HomeDepotTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDepotTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5E9D1124EE41DD001CCE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF5E9D1324EE41DD001CCE1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF5E9D1524EE41DD001CCE1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF5E9D1524EE41DD001CCE1C /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		DF5E9D1824EE41DD001CCE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF5E9D1A24EE41DD001CCE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5E9D1D24EE41DD001CCE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,18 @@
 		DF5E9D2F24EE41DD001CCE1C /* HomeDepotTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeDepotTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5E9D3324EE41DD001CCE1C /* HomeDepotTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDepotTestUITests.swift; sourceTree = "<group>"; };
 		DF5E9D3524EE41DD001CCE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5E9D4124EE43C6001CCE1C /* orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = orders.json; path = ../../../Desktop/orders.json; sourceTree = "<group>"; };
+		DF5E9D4324EE43EA001CCE1C /* OrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataModel.swift; sourceTree = "<group>"; };
+		DF5E9D4524EE5F76001CCE1C /* DateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateType.swift; sourceTree = "<group>"; };
+		DF5E9D4724EE6852001CCE1C /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		DF5E9D4924EE6D9D001CCE1C /* OrdersServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersServiceProtocol.swift; sourceTree = "<group>"; };
+		DF5E9D4B24EE7468001CCE1C /* OrderListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListDataSource.swift; sourceTree = "<group>"; };
+		DF5E9D8D24EE87BB001CCE1C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF5E9D9324EEAF18001CCE1C /* GroupedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedSection.swift; sourceTree = "<group>"; };
+		DF5E9D9524EEBFC2001CCE1C /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF5E9D9624EEBFC2001CCE1C /* OrderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCollectionViewCell.xib; sourceTree = "<group>"; };
+		DF5E9DA224EED26F001CCE1C /* orders.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = orders.json; path = ../../../Desktop/orders.json; sourceTree = "<group>"; };
+		DF5E9DA424EED455001CCE1C /* OrderHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +120,19 @@
 		DF5E9D1024EE41DD001CCE1C /* HomeDepotTest */ = {
 			isa = PBXGroup;
 			children = (
+				DF5E9D9F24EED15C001CCE1C /* Controller */,
+				DF5E9D9E24EED153001CCE1C /* View */,
+				DF5E9DA124EED268001CCE1C /* Model */,
+				DF5E9DA324EED291001CCE1C /* API */,
+				DF5E9D9D24EED146001CCE1C /* ViewModel */,
+				DF5E9DA024EED23A001CCE1C /* utils */,
 				DF5E9D1124EE41DD001CCE1C /* AppDelegate.swift */,
-				DF5E9D1324EE41DD001CCE1C /* SceneDelegate.swift */,
-				DF5E9D1524EE41DD001CCE1C /* ViewController.swift */,
-				DF5E9D1724EE41DD001CCE1C /* Main.storyboard */,
+				DF5E9D8D24EE87BB001CCE1C /* SceneDelegate.swift */,
 				DF5E9D1A24EE41DD001CCE1C /* Assets.xcassets */,
 				DF5E9D1C24EE41DD001CCE1C /* LaunchScreen.storyboard */,
+				DF5E9D4124EE43C6001CCE1C /* orders.json */,
 				DF5E9D1F24EE41DD001CCE1C /* Info.plist */,
+				DF5E9D4924EE6D9D001CCE1C /* OrdersServiceProtocol.swift */,
 			);
 			path = HomeDepotTest;
 			sourceTree = "<group>";
@@ -126,6 +153,59 @@
 				DF5E9D3524EE41DD001CCE1C /* Info.plist */,
 			);
 			path = HomeDepotTestUITests;
+			sourceTree = "<group>";
+		};
+		DF5E9D9D24EED146001CCE1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E9D4724EE6852001CCE1C /* OrderViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF5E9D9E24EED153001CCE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E9DA424EED455001CCE1C /* OrderHeaderCell.swift */,
+				DF5E9D9624EEBFC2001CCE1C /* OrderCollectionViewCell.xib */,
+				DF5E9D1724EE41DD001CCE1C /* Main.storyboard */,
+				DF5E9D9524EEBFC2001CCE1C /* OrderCollectionViewCell.swift */,
+				DF5E9D4B24EE7468001CCE1C /* OrderListDataSource.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DF5E9D9F24EED15C001CCE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E9D1524EE41DD001CCE1C /* OrderViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DF5E9DA024EED23A001CCE1C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E9D9324EEAF18001CCE1C /* GroupedSection.swift */,
+				DF5E9D4524EE5F76001CCE1C /* DateType.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		DF5E9DA124EED268001CCE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E9D4324EE43EA001CCE1C /* OrderDataModel.swift */,
+				DF5E9DA224EED26F001CCE1C /* orders.json */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DF5E9DA324EED291001CCE1C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +314,9 @@
 			files = (
 				DF5E9D1E24EE41DD001CCE1C /* LaunchScreen.storyboard in Resources */,
 				DF5E9D1B24EE41DD001CCE1C /* Assets.xcassets in Resources */,
+				DF5E9D4224EE43C6001CCE1C /* orders.json in Resources */,
 				DF5E9D1924EE41DD001CCE1C /* Main.storyboard in Resources */,
+				DF5E9D9824EEBFC2001CCE1C /* OrderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +341,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5E9D1624EE41DD001CCE1C /* ViewController.swift in Sources */,
+				DF5E9D1624EE41DD001CCE1C /* OrderViewController.swift in Sources */,
+				DF5E9D4624EE5F76001CCE1C /* DateType.swift in Sources */,
+				DF5E9D4A24EE6D9D001CCE1C /* OrdersServiceProtocol.swift in Sources */,
+				DF5E9D4424EE43EA001CCE1C /* OrderDataModel.swift in Sources */,
+				DF5E9D8E24EE87BB001CCE1C /* SceneDelegate.swift in Sources */,
+				DF5E9D9424EEAF18001CCE1C /* GroupedSection.swift in Sources */,
+				DF5E9D4C24EE7468001CCE1C /* OrderListDataSource.swift in Sources */,
+				DF5E9DA524EED455001CCE1C /* OrderHeaderCell.swift in Sources */,
+				DF5E9D9724EEBFC2001CCE1C /* OrderCollectionViewCell.swift in Sources */,
+				DF5E9D4824EE6852001CCE1C /* OrderViewModel.swift in Sources */,
 				DF5E9D1224EE41DD001CCE1C /* AppDelegate.swift in Sources */,
-				DF5E9D1424EE41DD001CCE1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

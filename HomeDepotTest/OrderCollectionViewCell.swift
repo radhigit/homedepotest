@@ -9,10 +9,15 @@
 import UIKit
 
 class OrderCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    static let cellID = "order"
+    
+    @IBOutlet weak var orderID: UILabel!
+    @IBOutlet weak var total: UILabel!
+    
+    func configure(_ orderID: String, total: Float) {
+        self.orderID.text =  orderID
+        self.total.text = String(format:"%.2f", total)
     }
-
+    
 }

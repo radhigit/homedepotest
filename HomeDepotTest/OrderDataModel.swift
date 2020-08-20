@@ -7,7 +7,9 @@
 //
 
 import Foundation
-
+struct OrderDetails: Codable {
+    var orders: [Order]
+}
 struct Order: Codable {
     let orderId: String?
     let orderDate: String?
@@ -19,9 +21,9 @@ struct Order: Codable {
     let registerNumber: String?
     let transactionNumber: String?
     let date: String?
-    let total: String?
+    let total: Float?
+    
 }
-
 enum CodingKeys: String, CodingKey {
     case orderId,orderDate,status,orderTotal,brand,type,storeNumber,registerNumber,transactionNumber,date,total
 }
@@ -33,6 +35,23 @@ extension Order {
     var formattedReceiptId: String? {
         guard let storeNumber = storeNumber, let registerNumber = registerNumber, let transactionNumber = transactionNumber else { return orderId }
         return  storeNumber + registerNumber + transactionNumber
+    }
+    
+    var isInStorePurchase: Bool {
+        return orderId == nil
+    }
+    var commonDate: Date? {
+        return  !isInStorePurchase ? convertDate(): DateType.date.formatter.date(from: date ?? "")
+        
+    }
+    func convertDate() -> Date? {
+        let originalFormatter = DateFormatter()
+        originalFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ssZ"
+        guard let originalDate = originalFormatter.date(from: orderDate ?? "") else { return nil }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-mm-dd"
+        let newDate = formatter.string(from: originalDate)
+        return DateType.date.formatter.date(from: newDate)
     }
 }
 

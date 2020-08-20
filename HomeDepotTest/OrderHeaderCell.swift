@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderHeaderCell: UICollectionViewCell {
+class OrderHeaderCell: UICollectionReusableView {
     
     @IBOutlet weak var titleLabel: UILabel!
     
