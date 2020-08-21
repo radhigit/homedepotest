@@ -45,7 +45,7 @@ extension OrderListDataSource: UICollectionViewDataSource, UICollectionViewDeleg
         if order.isInStorePurchase, let storeNum = order.storeNumber, let registerNumber = order.registerNumber, let transactionNumber = order.transactionNumber {
             formattedOrderId = storeNum + "-" + registerNumber + "-" + transactionNumber
         }
-        cell.configure(order.orderId ?? formattedOrderId ?? "", total:  order.orderTotal ?? order.total ?? 0.0)
+        cell.configure(order.orderId ?? formattedOrderId ?? "", total:  order.orderTotal ?? order.total ?? 0.0, isInStorePurchase: order.isInStorePurchase)
         return cell
     }
     

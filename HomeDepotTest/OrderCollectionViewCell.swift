@@ -15,9 +15,10 @@ class OrderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var orderID: UILabel!
     @IBOutlet weak var total: UILabel!
     
-    func configure(_ orderID: String, total: Float) {
-        self.orderID.text =  orderID
-        self.total.text = String(format:"%.2f", total)
+    func configure(_ orderID: String, total: Float, isInStorePurchase: Bool) {
+        let orderText = isInStorePurchase ? "ReceiptID" : "OrderID"
+        self.orderID.text =  orderText + " " + orderID
+        self.total.text = String(format:"$%.2f", total)
     }
     
 }
