@@ -25,7 +25,7 @@ enum DateType {
         case .formattedFinaldate:
             format = "MM dd, yyyy "
         case .date:
-            format = "yyyy-mm-dd"
+            format = "yyyy-MM-dd"
            }
         
         formatter.dateFormat = format

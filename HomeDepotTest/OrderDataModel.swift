@@ -47,9 +47,10 @@ extension Order {
     func convertDate() -> Date? {
         let originalFormatter = DateFormatter()
         originalFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ssZ"
+        originalFormatter.locale = Locale(identifier: "en_US_POSIX")
         guard let originalDate = originalFormatter.date(from: orderDate ?? "") else { return nil }
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-mm-dd"
+        formatter.dateFormat = "yyyy-MM-dd"
         let newDate = formatter.string(from: originalDate)
         return DateType.date.formatter.date(from: newDate)
     }
